@@ -1,0 +1,31 @@
+||||||||||||
+||| HTML |||
+||||||||||||
+
+Selectores
+  etiqueta --> añadir propiedades a todas las etiquetas etiqueta
+  #id {}--> añadir propiedades a un etiqueta con el id en cuestión
+  .class {} --> añadir propiedades a todas las etiquetas que tengan esta clases
+  * {} --> añadir propiedades a todas las etiquedas de la página
+  etiqueta[atributo] --> añadir propiedades a todas las etiquetas etiqueta que tienen el atributo atributo
+  selector, selector, ...--> añadir propiedades a todos los selectores que haya
+  selector1 selector2 --> añadir propiedades a todos los selector2 que estén dentro de selector1
+
+
+display:
+  block --> El elemento ocupa todo el ancho de la pantalla y los elementos se muestran unos debajo de otros
+  inline --> El elemento está junto o dentro de otro elemento
+
+margin:
+  auto --> Centra el contenido automaticamente
+  _ _ --> Vertical - Horizontal
+
+float: --> Sirve para hacer flotar un elemento
+  ...
+  ...
+  ...
+
+clear: --> Sirve para volver a agrupar los elementos que están float, estos deben de ser anteriores al elemento donde aplicamos clear
+  ...
+  ...
+  ...
