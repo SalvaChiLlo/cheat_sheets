@@ -2,26 +2,34 @@
 ||| GIT |||
 |||||||||||
 
-git init --> Inicializar un proyecto nuevo asdfasd
-git status --> Para ver el estado de los archivos
+-- Guardar cambios
 git add <file> --> Añadir los archivos al proyecto
 git commit -m "message goes here" --> Añadir los archivos al staging aera
-git log --> Mostrar el log de commits
-git restore <file> --> Descartar los cambios
-git restore --staged <file> --> Descartar cambios que estan en staging area
-git diff <file> --> Ver las diferencias entre el file que tienes localmente y el que está en staging o repositorio
+git push --set-upstream origin main --> Añadir la branch actual en origin main
 
-git clone rutaDelRepositorio --> Clonar repositorio
+-- Obtener cambios
 git pull --> Obtener los últimos cambios que ha habido en el repositorio
 
+-- Deshacer cambios
+git restore <file> --> Descartar los cambios
+git restore --staged <file> --> Descartar cambios que estan en staging area
+
+-- Cambio de ramas / Ramas existentes
+git branch --> Muestra la branch en la que estás actualmente
 git checkout --> Elegir a que commit pasado quieres saltar / Cambiar de branch
-git push --set-upstream origin main --> Añadir la branch actual en origin main
 
 -- Configuración
 git config --global user.email "your@mail.com" --> Configurar el correo del usuario
 git config --global user.name "username" --> Configurar nombre del usuario
 
 -- Agregar repositorio a proyecto
+git init --> Inicializar un repositorio local nuevo
 git remote add origin routeToYourGitRepo --> Añadir repositorio  
-git branch -M main
+git branch -M main --> Renombrar la branch actual a main
 git push -u origin main
+
+-- Otros
+git clone rutaDelRepositorio --> Clonar repositorio
+git status --> Para ver el estado de los archivos
+git diff <file> --> Ver las diferencias entre el file que tienes localmente y el que está en staging o repositorio
+git log --> Mostrar el log de commits
